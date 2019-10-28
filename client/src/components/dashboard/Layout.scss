@@ -5,7 +5,9 @@
   justify-content: space-between;
   font-family: $code;
 }
-
+::-webkit-scrollbar {
+  width: 0px;  
+}
 .right {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink, Link, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom"; // Link
 import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
 
@@ -27,13 +27,12 @@ class SideNav extends Component {
   };
 
   render() {
-    const { projects } = this.props.projects;
-
-    let projectData = projects.sort().map(project => (
-      <li className="project-listing" key={project._id}>
-        <Link to={`/projects/${project._id}`}>{project.name}</Link>
-      </li>
-    ));
+    //const { projects } = this.props.projects;
+    //let projectData = projects.sort().map(project => (
+    //  <li className="project-listing" key={project._id}>
+    //    <Link to={`/projects/${project._id}`}>{project.name}</Link>
+    //  </li>
+    //));
 
     return (
       <nav className="side">
@@ -99,12 +98,14 @@ class SideNav extends Component {
           </div>
           */}
         </ul>
+        {/*
         <ul className="bottom">
           <li>
             <h4 className="side-projects-header">Операции</h4>
           </li>
           <div className="project-listings">{projectData}</div>
         </ul>
+        */}
       </nav>
     );
   }
