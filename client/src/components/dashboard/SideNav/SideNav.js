@@ -46,9 +46,42 @@ class SideNav extends Component {
               menu
             </i>
           </li>
+          <div className="side-logo"></div>
           <NavLink exact activeClassName="active-page" to="/dashboard">
             <li>
-              <i className="material-icons icon">home</i>Home
+              <i className="side-logo__menu4 icon"></i>Операции
+            </li>
+          </NavLink>
+          <NavLink exact activeClassName="active-page" to="/about">
+            <li>
+              <i className="side-logo__main icon"></i>О нас
+            </li>
+          </NavLink>
+          <NavLink exact activeClassName="active-page" to="/account">
+            <li>
+              <i className="side-logo__account icon"></i>Учетная запись
+            </li>
+          </NavLink>
+          <NavLink exact activeClassName="active-page" to="/sales">
+            <li>
+              <i className="side-logo__menu3 icon"></i>Cкидки
+            </li>
+          </NavLink>
+          {/*
+          <NavLink exact activeClassName="active-page" to="/operations">
+            <li>
+              <i className="side-logo__menu4 icon"></i>Операции
+            </li>
+          </NavLink>
+          */}
+          <NavLink exact activeClassName="active-page" to="/price-list">
+            <li>
+              <i className="side-logo__menu5 icon"></i>Прайс-Лист
+            </li>
+          </NavLink>
+          <NavLink exact activeClassName="active-page" to="/control">
+            <li>
+              <i className="side-logo__menu6 icon"></i>Управление
             </li>
           </NavLink>
           {/*
@@ -58,15 +91,17 @@ class SideNav extends Component {
             </li>
           </NavLink>
           */}
+          {/*
           <div className="sign-out" onClick={this.onLogoutClick}>
             <li>
               <i className="material-icons icon">arrow_back</i>Sign Out
             </li>
           </div>
+          */}
         </ul>
         <ul className="bottom">
           <li>
-            <h4 className="side-projects-header">Projects</h4>
+            <h4 className="side-projects-header">Операции</h4>
           </li>
           <div className="project-listings">{projectData}</div>
         </ul>
