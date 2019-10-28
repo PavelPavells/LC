@@ -79,11 +79,8 @@ class Project extends Component {
 
   onChange = async e => {
     await this.setState({ tasks: this.props.tasks.tasks });
-
     let tasks = await [...this.state.tasks];
-
     tasks[e.target.id].taskName = await e.target.value;
-
     await this.setState({ tasks });
   };
 
@@ -168,7 +165,7 @@ class Project extends Component {
             )}
             className="main-btn center-btn"
           >
-            Edit Project Info
+            Изменить операцию
           </button>
 
           <div className="modal-wrapper">
@@ -194,11 +191,11 @@ class Project extends Component {
                 className="main-btn add-btn"
                 onClick={this.toggleTaskModal}
               >
-                Add task
+                Добавить операцию
               </button>
               <div className="projects-column-headers">
-                <p>Assignee</p>
-                <p>Due</p>
+                <p>Владелец</p>
+                <p>Дата окончания</p>
               </div>
             </div>
             <div className="project-tasks">{tasksList}</div>

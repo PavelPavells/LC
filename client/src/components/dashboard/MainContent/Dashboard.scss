@@ -1,5 +1,15 @@
 @import "../../../styles/base.scss";
-
+.company__wrapper-about {
+  font-family: $code;
+  line-height: 2.2em;
+}
+.company__wrapper-text {
+  font-family: $code;
+  line-height: 2.2em;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .modal-wrapper {
   display: flex;
   justify-content: center;
@@ -13,14 +23,14 @@
 }
 
 .project-icon {
-  height: 150px;
-  width: 150px;
-  flex-basis: 150px;
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 20em;
+  width: 20em;
+  //flex-basis: 150px;
+  border-radius: 1rem;
   font-size: 0.75rem;
   border: 1px solid $gray;
   margin: 1rem 1rem 1rem 0rem;

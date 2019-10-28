@@ -160,6 +160,7 @@ class Login extends Component {
             <h1>Copyright 2019 &copy; CARDDEX</h1>
             <p>Информация на сайте не является публичной офертой</p>
           </div>
+          {/*
           <div className="footer-phone">
             <img src="../../img/call.png" alt="" />
             <div className="footer-phone__number">
@@ -171,6 +172,7 @@ class Login extends Component {
             <img src="../../img/email.png" alt="" />
             <h1>help@carddex.ru</h1>
           </div>
+          */}
         </div>
       </div>
     );

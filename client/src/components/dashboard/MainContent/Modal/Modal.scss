@@ -1,7 +1,7 @@
 @import "../../../../styles/base.scss";
 
 .modal {
-  width: 600px;
+  width: 580px;
   background: white;
   border: 1px solid $gray;
   animation: fade-in 0.25s;
@@ -10,7 +10,8 @@
   visibility: visible;
   position: fixed;
   top: 8%;
-  height: 550px;
+  right: 0.3%;
+  height: 780px;
   z-index: 1000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +29,7 @@
 
 .close-modal {
   color: $black;
-  font-size: 18px;
+  font-size: 30px;
   display: inline-block;
 
   &:hover {

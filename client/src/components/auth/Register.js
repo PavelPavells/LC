@@ -141,7 +141,7 @@ class Register extends Component {
                     />
                     <div className="auth-error">{errors.pass}</div>
                   </label>
-                </div>           
+                </div>
                 <div className="auth-group">
                   <label>
                     <div className="auth-label">Email</div>
@@ -185,7 +185,8 @@ class Register extends Component {
                 <div>
                   <div className="auth-password__ask">
                     <label>
-                      <input type="checkbox" />Запомнить меня
+                      <input type="checkbox" />
+                      Запомнить меня
                     </label>
                     <a
                       href="https://yandex.ru"
@@ -216,6 +217,7 @@ class Register extends Component {
             <h1>Copyright 2019 &copy; CARDDEX</h1>
             <p>Информация на сайте не является публичной офертой</p>
           </div>
+          {/*
           <div className="footer-phone">
             <img src="../../img/call.png" alt="" />
             <div className="footer-phone__number">
@@ -227,6 +229,7 @@ class Register extends Component {
             <img src="../../img/email.png" alt="" />
             <h1>help@carddex.ru</h1>
           </div>
+          */}
         </div>
       </div>
     );

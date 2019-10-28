@@ -57,7 +57,7 @@ class Dashboard extends Component {
         >
           Edit project
         </div>
-        <div className="project-info-button">Go to project</div>
+        <div className="project-info-button">Перейти к операции</div>
       </div>
     ));
 
@@ -66,7 +66,7 @@ class Dashboard extends Component {
       content = (
         <>
           <button className="main-btn" onClick={this.toggleModal}>
-            Create another project
+            Создать другую операцию
           </button>
           <div className="modal-wrapper">
             <Modal
@@ -88,9 +88,9 @@ class Dashboard extends Component {
         <>
           <div className="projects">
             <div className="no-projects">
-              <h1 className="header">You have no projects</h1>
+              <h1 className="header">Нет операций</h1>
               <button className="main-btn" onClick={this.toggleModal}>
-                Create your first project
+                Создайте первую операцию
               </button>
               <div className="modal-wrapper">
                 <Modal onClose={this.toggleModal} modal={this.state.modal} />
@@ -103,17 +103,15 @@ class Dashboard extends Component {
 
     return (
       <div className="main-content">
-        <h1 className="header">Your Projects</h1>
+        <h1 className="header">Ваши операции</h1>
         {content}
       </div>
     );
   }
 }
-
 const mapStateToProps = state => ({
   projects: state.projects
 });
-
 export default connect(
   mapStateToProps,
   {}
